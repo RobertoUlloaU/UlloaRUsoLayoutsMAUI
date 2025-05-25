@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="UsoLayoutsUlloaRoberto.GridLayout"
+             Title="Grid Layout">
+    <Grid RowDefinitions="*,*"
+          ColumnDefinitions="*,*">
+        <!-- Primer cuadro rojo -->
+        <BoxView Color="Red" Grid.Row="0" Grid.Column="0" />
+
+        <!-- Segundo cuadro verde -->
+        <BoxView Color="Green" Grid.Row="0" Grid.Column="1" />
+
+        <!-- Tercer cuadro azul -->
+        <BoxView Color="Blue" Grid.Row="1" Grid.Column="0" />
+
+        <!-- Cuarto cuadro amarillo con botón -->
+        <Grid Grid.Row="1" Grid.Column="1" BackgroundColor="Yellow">
+            <Button Text="Ir a StackLayout"
+                    HorizontalOptions="Center"
+                    VerticalOptions="Center"
+                    Clicked="OnGoToStackLayoutClicked" />
+        </Grid>
+    </Grid>
+</ContentPage>
