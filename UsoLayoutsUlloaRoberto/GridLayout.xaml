@@ -5,16 +5,9 @@
              Title="Grid Layout">
     <Grid RowDefinitions="*,*"
           ColumnDefinitions="*,*">
-        <!-- Primer cuadro rojo -->
         <BoxView Color="Red" Grid.Row="0" Grid.Column="0" />
-
-        <!-- Segundo cuadro verde -->
         <BoxView Color="Green" Grid.Row="0" Grid.Column="1" />
-
-        <!-- Tercer cuadro azul -->
         <BoxView Color="Blue" Grid.Row="1" Grid.Column="0" />
-
-        <!-- Cuarto cuadro amarillo con botón -->
         <Grid Grid.Row="1" Grid.Column="1" BackgroundColor="Yellow">
             <Button Text="Ir a StackLayout"
                     HorizontalOptions="Center"
@@ -23,3 +16,4 @@
         </Grid>
     </Grid>
 </ContentPage>
+

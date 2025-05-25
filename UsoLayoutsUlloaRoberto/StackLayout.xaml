@@ -3,11 +3,11 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="UsoLayoutsUlloaRoberto.StackLayout"
              Title="Stack Layout">
-    <VerticalStackLayout VerticalOptions="Center" HorizontalOptions="Center">
+    <VerticalStackLayout VerticalOptions="Center" HorizontalOptions="Center" Spacing="15" Padding="20">
         <Label Text="Roberto Alejandro Ulloa Urbina" FontSize="Large" />
         <Label Text="Roberto Alejandro Ulloa Urbina" FontSize="Medium" />
         <Label Text="Roberto Alejandro Ulloa Urbina" FontSize="Small" />
-        <Button Text="Ir a FlexLayout" Clicked="OnGoToFlexPageClicked" Margin="20" />
+        <Button Text="Ir a FlexLayout" Clicked="OnGoToFlexLayoutClicked" />
+        <Button Text="Regresar" Clicked="OnBackButtonClicked" />
     </VerticalStackLayout>
-
 </ContentPage>

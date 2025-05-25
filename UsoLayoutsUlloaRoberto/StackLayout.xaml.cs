@@ -2,15 +2,19 @@ namespace UsoLayoutsUlloaRoberto;
 
 public partial class StackLayout : ContentPage
 {
-	public StackLayout()
-	{
-		InitializeComponent();
-	}
-    // Metodo que manejara el evento Click del boton
-    private async void OnGoToFlexPageClicked(object sender, EventArgs e)
+    public StackLayout()
     {
-        // Navega a la pagina llamada "FlexLayout" usando Shell Navigation
-        await Shell.Current.GoToAsync(nameof(FlexLayout));
+        InitializeComponent();
+    }
+
+    private async void OnGoToFlexLayoutClicked(object sender, EventArgs e)
+    {
+        await Shell.Current.GoToAsync($"///{nameof(FlexLayout)}");
+    }
+
+    private async void OnBackButtonClicked(object sender, EventArgs e)
+    {
+        await Shell.Current.GoToAsync("///GridLayout");
     }
 
 }
